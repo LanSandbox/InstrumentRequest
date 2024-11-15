@@ -69,7 +69,7 @@
               </div>
               <div id="CollapseIntroduction" class="collapse show" aria-labelledby="HeadingIntroduction" data-parent="#InstrumentRequest">
                   <div class="card-body">
-                      <div w3-include-html="instructions/1_introduction.html"></div> 
+                      <div w3-include-html="instructions/1_introduction.html.twig"></div> 
                   </div>
               </div>
           </div>
@@ -84,7 +84,7 @@
             </div>
             <div id="CollapseExperimentDescription" class="collapse" aria-labelledby="HeadingExperimentDescription" data-parent="#InstrumentRequest">
                 <div class="card-body">
-                  <div w3-include-html="forms/1_experiment_names_n_description.html"></div> 
+                  <div w3-include-html="forms/1_experiment_names_n_description.html.twig"></div> 
                 </div>
             </div>
         </div>
@@ -99,9 +99,132 @@
             </div>
             <div id="CollapseRequestInstruments" class="collapse" aria-labelledby="HeadingRequestInstruments" data-parent="#InstrumentRequest">
                 <div class="card-body">
-                  <div w3-include-html="forms/2_request_instruments.html"></div> 
+                  <div w3-include-html="forms/2_request_instruments.html.twig"></div> 
                 </div>
             </div>
+              <div class="card">
+                  <div class="card-header" id="HeadingExperimentDescription">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseExperimentDescription" aria-expanded="true" aria-controls="CollapseExperimentDescription">
+                              Experiment Names & Description
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseExperimentDescription" class="collapse" aria-labelledby="HeadingExperimentDescription" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/1_experiment_names_n_description.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingRequestInstruments">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseRequestInstruments" aria-expanded="true" aria-controls="CollapseRequestInstruments">
+                              Request Instrument
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseRequestInstruments" class="collapse" aria-labelledby="HeadingRequestInstruments" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/2_request_instruments.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingCollaboratosrAndRoles">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseCollaboratosrAndRoles" aria-expanded="true" aria-controls="CollapseCollaboratosrAndRoles">
+                              Collaborators and Roles
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseCollaboratosrAndRoles" class="collapse" aria-labelledby="HeadingCollaboratosrAndRoles" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/3_collaborators_n_roles.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingFunding">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseFunding" aria-expanded="true" aria-controls="CollapseFunding">
+                              Funding
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseFunding" class="collapse" aria-labelledby="HeadingFunding" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/4_funding.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingBilling">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseBilling" aria-expanded="true" aria-controls="CollapseBilling">
+                              Billing
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseBilling" class="collapse" aria-labelledby="HeadingBilling" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/5_billing.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingExperimentSupport">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseExperimentSupport" aria-expanded="true" aria-controls="CollapseExperimentSupport">
+                              Experiment Support
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseExperimentSupport" class="collapse" aria-labelledby="HeadingExperimentSupport" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/6_experiment_support.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingLocationAndEnvironment">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseLocationAndEnvironment" aria-expanded="true" aria-controls="CollapseLocationAndEnvironment">
+                              Location and Environment
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseLocationAndEnvironment" class="collapse" aria-labelledby="HeadingLocationAndEnvironment" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/7_location_n_environment.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header" id="HeadingComment">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#CollapseComment" aria-expanded="true" aria-controls="CollapseComment">
+                              Comment & Additional Information
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="CollapseComment" class="collapse" aria-labelledby="HeadingComment" data-parent="#InstrumentRequest">
+                      <div class="card-body">
+                          <div w3-include-html='forms/8_comments_n_additional_information.html.twig'></div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+          <div w3-include-html='forms/9_agreement_submit.html.twig'></div>
         </div>
     </div>
     

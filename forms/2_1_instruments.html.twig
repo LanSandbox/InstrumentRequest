@@ -1,0 +1,72 @@
+<table class="table table-secondary">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Req. Instrument</th>
+        <th scope="col">Schd. Instrument</th>
+        <th scope="col">Req Qty</th>
+        <th scope="col">SchQty</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>
+            <select class="form-select form-select-sm" autocomplete="off">
+                <option value="0">None Chosen</option>
+                <optgroup label="Sensor">
+                    <option value="1">Broadband</option>
+                    <option value="2">Short Period</option>
+                    <option value="3">High Frequency</option>
+                    <option value="4" selected>Geophone (4.5Hz)</option>
+                </optgroup>
+                <optgroup label="Datalogger">
+                    <option value="5">Three Channel</option>
+                    <option value="6">Multi Channel/option>
+                    <option value="7">MT Longperiod</option>
+                    <option value="8" >MT Wideband</option>
+                </optgroup>
+
+            </select>
+        </td>
+        <td>N/A</td>
+        <td><input type="text" class="form-control form-control-sm" value="1"></td>
+        <td></td>
+        <td><button type="button" class="btn btn-danger btn-sm">X</button></td>
+    </tr>
+    <tr>
+        <td colspan="6" class="bg-success text-center text-white pt-1 pb-0">
+            <h6>
+                Enter a new instrument below and add it to the request by pressing
+                the add button.
+            </h6>
+        </td>
+    </tr>
+    <tr class="table-success">
+        <th scope="row">New</th>
+        <td>
+            <select class="form-select form-select-sm" autocomplete="off">
+                <option value="0" selected>None Chosen</option>
+                <optgroup label="Sensor">
+                    <option value="1">Broadband</option>
+                    <option value="2">Short Period</option>
+                    <option value="3">High Frequency</option>
+                    <option value="4">Geophone (4.5Hz)</option>
+                </optgroup>
+                <optgroup label="Datalogger">
+                    <option value="5">Three Channel</option>
+                    <option value="6">Multi Channel/option>
+                    <option value="7">MT Longperiod</option>
+                    <option value="8" >MT Wideband</option>
+                </optgroup>
+
+            </select>
+        </td>
+        <td>N/A</td>
+        <td><input type="text" class="form-control form-control-sm" value="0"></td>
+        <td></td>
+        <td><button type="button" class="btn btn-success btn-sm">Add</button></td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,61 @@
+<div class="card my-2">
+    <div class="card-body bg-light text-dark">
+        <h5 class="card-title text-center text-primary">Location & Environment</h5>
+        <div>Please enter the coordinates of the southwest and northeast corners of a box that encloses the location of your experiment.</div>
+        <div>You can press the "Draw a rectangle" button to draw a bounding box for your experiment.</div>
+        <div>Pressing "Stop Drawing" will allow you to drag and zoom the map normally, again. </div>
+        <div class="row my-2">
+            <div class="col-sm-3">
+                <label  class="form-label fw-bold mt-3">Southwest Coordinates:</label>
+                <div class="row">
+                    <label class="col-sm-4 col-form-label">Latitude</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-sm" value="83.216">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 col-form-label">longitude</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-sm" value="-177.3631">
+                    </div>
+                </div>
+                <label  class="form-label fw-bold mt-3">Northwest Coordinates:</label>
+                <div class="row">
+                    <label class="col-sm-4 col-form-label">Latitude</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-sm" value="87.0495">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 col-form-label">longitude</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-sm" value="-159.0819">
+                    </div>
+                </div>
+                <hr class="my-12"/>
+                <div class="form-text">
+                    For <i>longitude</i>, positive numbers (+) are east, and negative numbers (-) are west,
+                    based on the Prime Meridian (0).
+                </div>
+                <div class="form-text">
+                    For <i>latitude</i>, positive numbers (+) positive numbers (+) are north,
+                    and negative numbers (-) are south, based on the Equator (0).
+                </div>
+            </div>
+
+            <div class="col-sm-6 h-25">
+                <div id="map"></div>
+            </div>
+            <div class="col-sm-3">
+                <label  class="form-label fw-bold mt-3">Environment</label>
+                <select class="form-select form-select-sm" autocomplete="off">
+                    <option value="0">Costal</option>
+                    <option value="1" >Plain</option>
+                    <option value="2" selected>N/A</option>
+                </select>
+                <label  class="form-label required fw-bold mt-3">Geographic Location</label>
+                <textarea class="form-control form-control-sm h-50"></textarea>
+            </div>
+        </div>
+    </div>
+</div>

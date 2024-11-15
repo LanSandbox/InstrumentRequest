@@ -1,0 +1,76 @@
+<div w3-include-html="instructions/2_request_instrument_instruction.html"></div>
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Leaves PIC Dock</th>
+      <th scope="col">Returns to PIC Dock</th>
+      <th scope="col">Application Date</th>
+      <th scope="col">Last Modified</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <th scope="row">1</th>
+      <td class="col-sm-3">
+        <input
+          class="datepicker form-control form-control-sm"
+          value="2024-09-30"
+        />
+        <div class="form-text">Format: 2024-09-12</div>
+        <div class="form-text">
+          This is the date that the equipment will leave PASSCAL.
+        </div>
+      </td>
+      <td class="col-sm-3">
+        <input
+          class="datepicker form-control form-control-sm"
+          value="2024-10-20"
+        />
+        <div class="form-text">Format: 2024-09-12</div>
+        <div class="form-text">
+          This is the date the equipment will be received by PASSCAL.
+        </div>
+      </td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td><button type="button" class="btn btn-danger btn-sm">X</button></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td colspan="4">
+        {% include 'instrument_request/forms/2_1_instruments.html.twig' %}
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6" class="bg-success text-center text-white pt-1 pb-0">
+        <h6>
+          To add a new request, enter the dates below and then press the add
+          button.
+        </h6>
+      </td>
+    </tr>
+    <tr class="table-success">
+      <th scope="row">New</th>
+      <td class="col-sm-3">
+        <input class="datepicker form-control form-control-sm" />
+        <div class="form-text">Format: 2024-09-12</div>
+        <div class="form-text">
+          This is the date that the equipment will leave PASSCAL.
+        </div>
+      </td>
+      <td class="col-sm-3">
+        <input class="datepicker form-control form-control-sm" />
+        <div class="form-text">Format: 2024-09-12</div>
+        <div class="form-text">
+          This is the date the equipment will be received by PASSCAL.
+        </div>
+      </td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td><button type="button" class="btn btn-success btn-sm">Add</button></td>
+    </tr>
+  </tbody>
+</table>
